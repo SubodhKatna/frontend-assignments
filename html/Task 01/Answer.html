@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2><mark>Pizza mania</mark></h2>
+</header>
+
+<main>
+    <h3>Pizza Order Here</h3>
+    <hr>
+
+    <form action="#" method="POST">
+
+        <p>
+            <label for="firstName"><strong>First Name:</strong></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        </p>
+
+        <p>
+            <label for="lastName"><strong>Last Name</strong></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        </p>
+
+        <p>
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" placeholder="abc@example.com">
+        </p>
+
+        <p>
+            <label for="contact"><strong>Contact:</strong></label>
+            <input type="tel" id="contact" name="contact" placeholder="Ex-8989898989">
+        </p>
+
+        <p>
+            <label for="deliveryDate"><strong>Preferred Delivery Date:</strong></label>
+            <input type="date" id="deliveryDate" name="deliveryDate">
+        </p>
+
+        <p>
+            <strong>Size:</strong><br><br>
+            <label>Small <input type="radio" name="size" value="small"></label>
+            <label>Medium <input type="radio" name="size" value="medium"></label>
+            <label>Large <input type="radio" name="size" value="large"></label>
+        </p>
+
+        <p>
+            <label for="outlet"><strong><mark>Outlet:</mark></strong></label>
+            <select id="outlet" name="outlet">
+                <option value="">Select Outlet</option>
+            </select>
+        </p>
+
+        <h3><em>Menu&darr;</em></h3>
+        <p>
+            <input type="checkbox" id="hawaiian" name="menu" value="hawaiian">
+            <label for="hawaiian"><strong>Hawaiian(150.00 &#8377; <del>170.00&#8377;</del>)</strong></label>
+            <select name="hawaiian_qty">
+                <option value="1">1</option>
+            </select>
+        </p>
+        <p>
+            <input type="checkbox" id="pepperoni" name="menu" value="pepperoni">
+            <label for="pepperoni"><strong>Pepperoni(140.00 &#8377; <del>160.00&#8377;</del>)</strong></label>
+            <select name="pepperoni_qty">
+                <option value="1">1</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="vegetable" name="menu" value="vegetable">
+            <label for="vegetable"><strong>Vegetable(130.00 &#8377; <del>150.00&#8377;</del>)</strong></label>
+            <select name="vegetable_qty">
+                <option value="1">1</option>
+            </select>
+        </p>
+
+        <h3><em>Extra Details:&darr;</em></h3>
+
+        <p>
+            <label for="creditCard"><strong>Credit Card:</strong></label>
+            <input type="text" id="creditCard" name="creditCard" placeholder="1234-5678-9123-1111">
+            <button type="button">Verify Card</button>
+        </p>
+
+        <p>
+            <label for="pin"><strong>Pin:</strong></label>
+            <input type="text" id="pin" name="pin" placeholder="421604">
+        </p>
+
+        <p>
+            <label for="photo"><strong><mark>Upload photo for discount:</mark></strong></label>
+            <input type="file" id="photo" name="photo">
+        </p>
+
+        <p>
+            <label for="note" style="vertical-align: top;"><strong><mark>Additional Note:</mark></strong></label>
+            <textarea id="note" name="note" rows="4" cols="30" placeholder="If any additional Requirement There Please Mention Here."></textarea>
+        </p>
+
+        <p>
+            ⭐
+            <label for="rating"><strong><mark>Rating:</mark></strong></label>
+            <input type="range" id="rating" name="rating">
+        </p>
+
+        <p align="center">
+            <button type="submit">Submit Order</button>
+        </p>
+
+    </form>
+</main>
+
+</body>
+</html>

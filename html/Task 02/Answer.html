@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="POST">
+    <table>
+        <tr>
+            <td><label for="name">Name*</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><input type="text" id="address" name="address"></td>
+        </tr>
+        <tr>
+            <td><label for="zipcode">Zip Code*</label></td>
+            <td><input type="text" id="zipcode" name="zipcode" placeholder="enter a 5-digit code" required></td>
+        </tr>
+        <tr>
+            <td><label for="country">Country*</label></td>
+            <td>
+                <select id="country" name="country" required>
+                    <option value="">Please select...</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Gender*</label></td>
+            <td>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Preferences*</label></td>
+            <td>
+                <label><input type="checkbox" name="preferences" value="red"> Red</label>
+                <label><input type="checkbox" name="preferences" value="green" checked> Green</label>
+                <label><input type="checkbox" name="preferences" value="blue"> Blue</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone*</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email*</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password*</label></td>
+            <td><input type="password" id="password" name="password" placeholder="6-8 characters" required></td>
+        </tr>
+        <tr>
+            <td><label for="verifyPassword">Verify Password*</label></td>
+            <td><input type="password" id="verifyPassword" name="verifyPassword" required></td>
+        </tr>
+        <tr>
+            <td><label for="birthday">Birthday*</label></td>
+            <td><input type="date" id="birthday" name="birthday" required></td>
+        </tr>
+        <tr>
+            <td><label for="appointment">Appointment*</label></td>
+            <td><input type="time" id="appointment" name="appointment" required></td>
+        </tr>
+        <tr>
+            <td></td> <td>
+            <br>
+            <button type="submit">SEND</button>
+            <button type="reset">CLEAR</button>
+        </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

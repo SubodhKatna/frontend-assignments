@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <header class="header">
+      <h1>How's the sky looking today?</h1>
+      <div class="search-bar">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Search for a place...">
+        </div>
+        <button class="search-btn">Search</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      
+      <section class="left-panel">
+        
+        <div class="hero-card">
+          <div class="hero-info">
+            <h2>Berlin, Germany</h2>
+            <p>Tuesday, Aug 5, 2025</p>
+          </div>
+          <div class="hero-temp">
+            <span class="temperature">20°</span>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Feels Like</span>
+            <span class="stat-value">18°</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Humidity</span>
+            <span class="stat-value">46%</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Wind</span>
+            <span class="stat-value">14 km/h</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Precipitation</span>
+            <span class="stat-value">0 mm</span>
+          </div>
+        </div>
+
+        <div class="daily-section">
+          <h3>Daily forecast</h3>
+          <div class="daily-cards">
+            <div class="day-card">
+              <span class="day-name">Tue</span>
+              <div class="day-temps"><span>20°</span> <span class="temp-low">14°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Wed</span>
+              <div class="day-temps"><span>21°</span> <span class="temp-low">15°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Thu</span>
+              <div class="day-temps"><span>24°</span> <span class="temp-low">14°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Fri</span>
+              <div class="day-temps"><span>25°</span> <span class="temp-low">13°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Sat</span>
+              <div class="day-temps"><span>21°</span> <span class="temp-low">15°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Sun</span>
+              <div class="day-temps"><span>25°</span> <span class="temp-low">16°</span></div>
+            </div>
+            <div class="day-card">
+              <span class="day-name">Mon</span>
+              <div class="day-temps"><span>24°</span> <span class="temp-low">15°</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="right-panel">
+        <div class="hourly-header">
+          <h3>Hourly forecast</h3>
+          <select class="day-dropdown">
+            <option>Tuesday</option>
+          </select>
+        </div>
+        
+        <div class="hourly-list">
+          <div class="hour-row">
+            <span class="hour-time">3 PM</span>
+            <span class="hour-temp">20°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">4 PM</span>
+            <span class="hour-temp">20°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">5 PM</span>
+            <span class="hour-temp">20°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">6 PM</span>
+            <span class="hour-temp">19°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">7 PM</span>
+            <span class="hour-temp">18°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">8 PM</span>
+            <span class="hour-temp">18°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">9 PM</span>
+            <span class="hour-temp">17°</span>
+          </div>
+          <div class="hour-row">
+            <span class="hour-time">10 PM</span>
+            <span class="hour-temp">17°</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

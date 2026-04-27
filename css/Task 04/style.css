@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* TOP BANNER */
+.top-banner {
+  background: #006341;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* NAVBAR */
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo img {
+  width: 65px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #006341;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  min-height: 500px;
+}
+
+.hero-left {
+  flex: 1;
+  background: #111;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-white {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-right {
+  flex: 1;
+  background: #e31837;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-right img {
+  width: 320px;
+}
+
+.bg-text {
+  position: absolute;
+  font-size: 90px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.15);
+}
+
+/* PROMO */
+.promo-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  background: #111;
+}
+
+.promo-card {
+  flex: 1;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.promo-card img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #006341;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .promo-section {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
