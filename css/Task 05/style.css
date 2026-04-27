@@ -1,54 +1,48 @@
-/* --- Basic Reset --- */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* A light background so the nav stands out */
+    background-color: #f8f9fa;
 }
 
-/* --- Navigation Container --- */
 nav {
     display: flex;
-    justify-content: space-between; /* Pushes logo to the left, links to the right */
-    align-items: center; /* Vertically centers the items */
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
-    padding: 15px 5%; /* Top/bottom padding, and side padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow underneath */
-    position: sticky; /* Keeps the nav at the top when scrolling */
+    padding: 15px 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* --- Logo Styling --- */
 nav img {
-    height: 50px; /* Constrain the logo height */
+    height: 50px;
     width: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 nav img:hover {
-    transform: scale(1.05); /* Slight zoom effect when hovering over the logo */
+    transform: scale(1.05);
 }
 
-/* --- Links Container --- */
 nav div {
     display: flex;
-    gap: 30px; /* Creates clean, even spacing between the links */
+    gap: 30px;
 }
 
-/* --- Individual Link Styling --- */
 nav div a {
-    text-decoration: none; /* Removes the default underline */
-    color: #333333; /* Dark gray text */
+    text-decoration: none;
+    color: #333333;
     font-size: 16px;
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600;
     letter-spacing: 0.5px;
-    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+    transition: color 0.3s ease;
     position: relative;
 }
 
-/* --- Link Hover Effect (Animated Underline) --- */
 nav div a::after {
     content: '';
     position: absolute;
@@ -56,7 +50,7 @@ nav div a::after {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #007BFF; /* A nice primary blue */
+    background-color: #007BFF;
     transition: width 0.3s ease;
 }
 
@@ -65,5 +59,5 @@ nav div a:hover {
 }
 
 nav div a:hover::after {
-    width: 100%; /* The underline expands on hover */
+    width: 100%;
 }

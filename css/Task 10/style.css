@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f3e5d8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Image */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Text */
+h1 {
+    margin-top: 15px;
+}
+
+.desc {
+    color: gray;
+}
+
+/* Preparation box */
+.prep {
+    background: #f8e7f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}

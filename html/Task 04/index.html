@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: #000;
+    }
+    table {
+        margin: 40px;
+        border: 2px solid #555;
+        border-collapse: separate;
+        border-spacing: 12px;
+    }
+    th, td {
+        padding: 5px;
+        margin: 5px;
+        gap: 10px;
+        text-align: center;
+    }
+    th{
+        border: 1px solid white;
+    }
+    td{
+        border: 1px solid crimson;
+        border-radius: 12px;
+    }
+</style>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">row Columns</td>
+            <td colspan="3">span Columns</td>
+        </tr>
+        <tr>
+            <td colspan="2">span Columns</td>
+            <td rowspan="3">row Columns</td>
+        </tr>
+        <tr>
+            <td rowspan="2">row Columns</td>
+            <td>Column</td>
+        </tr>
+
+        <tr>
+            <td>Column</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
